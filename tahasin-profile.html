@@ -37,8 +37,7 @@
             tabindex="0"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li><a>Homepage</a></li>
-            <li><a>Portfolio</a></li>
+            <li><a href="index.html">Homepage</a></li>
             <li><a>About</a></li>
             <li><a>Contact</a></li>
             <li><a>My projects</a></li>
@@ -138,7 +137,7 @@
             </ul>
           </div>
           <div class="card-actions justify-end mt-5">
-            <button class="btn btn-primary">Edit Profile</button>
+            <button class="btn btn-disabled">Edit Profile</button>
           </div>
         </div>
       </div>
@@ -204,18 +203,18 @@
     </footer>
 
     <script src="custom.js"></script>
- <!-- modal -->
- <input type="checkbox" id="my_modal_7" class="modal-toggle" />
- <div class="modal" role="dialog">
-   <div class="modal-box text-center">
-     <h3 class="text-lg font-bold">Select Profile To View:</h3>
-   </ul>
-   <ul class="menu menu-md bg-base-200 rounded-box w-56 text-center">
-     <li><a href="tanjir-profile.html">Tanjir Ahmad</a></li>
-     <li><a href="tahasin-profile.html">Tahasin Chowdhury</a></li>
-   </ul>
-   </div>
-   <label class="modal-backdrop" for="my_modal_7">Close</label>
- </div>
+ <!-- Modal -->
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box flex flex-col items-center justify-center">
+    <h3 class="text-lg font-bold text-center">Select Profile To View:</h3>
+    <ul class="menu menu-md bg-base-200 rounded-box w-56 text-center mt-4">
+      <li><a href="tanjir-profile.html">Tanjir Ahmad</a></li>
+      <li><a href="tahasin-profile.html">Tahasin Chowdhury</a></li>
+    </ul>
+  </div>
+  <label class="modal-backdrop" for="my_modal_7">Close</label>
+</div>
+
 </body>
 </html>

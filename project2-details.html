@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engeneers</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <div class="navbar bg-base-100 shadow-2xl">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a href="index.html">Homepage</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+            <li><a>My projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a href="index.html" class="btn btn-ghost text-xl">Engeneers</a>
+      </div>
+      <div class="navbar-end">
+        <button class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+        <label for="my_modal_7" class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-gray-500"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.869 0-7 3.131-7 7h2c0-2.757 2.243-5 5-5s5 2.243 5 5h2c0-3.869-3.131-7-7-7z"
+              />
+            </svg>
+            <span class="badge badge-xs badge-primary indicator-item"></span>
+          </div>
+        </label>
+      </div>
+    </div>
+    <!-- Main content -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">App Project: Interactive Details</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAAPQElEQVR4Xu2d3asdVxnGZ+99TFOTNklTUtOmadREJCh+XCgigh8IiqigIF70z/NCBAUVURDxwgupFyJYgppa0za1NrRNv2Kbes7ZznvSvZn9Zs2sNbPPnJxnv799ec6amXf9nneeedeamTWTS1tPzit+EIAABAQITDAsAZUIEQIQ2COAYZEIEICADAEMS0YqAoUABDAscgACEJAhgGHJSEWgEIAAhkUOQAACMgQwLBmpCBQCEMCwyAEIQECGAIYlIxWBQgACGBY5AAEIyBDAsGSkIlAIQADDIgcgAAEZAhiWjFQECgEIYFjkAAQgIEMAw5KRikAhAAEMixyAAARkCGBYMlIRKAQggGGRAxCAgAwBDEtGKgKFAAQwLHIAAhCQIYBhyUhFoBCAAIZFDkAAAjIEMCwZqQgUAhDAsMgBCEBAhgCGJSMVgUIAAhgWOQABCMgQwLBkpCJQCEAAwyIHIAABGQIYloxUBAoBCGBY5AAEICBDAMOSkYpAIQABDIscgAAEZAhgWDJSESgEIIBhkQMQgIAMAQxLRioChQAEMCxyAAIQkCGAYclIRaAQgACGRQ5AAACMgQwLBmpCBQCEMCwyAEIQECGAIYlIxWBQgACGBY5AAEIyBDAsGSkIlAIQADDIgcgAAEZAhiWjFQECgEIYFjkAAQgIEMAw5KRikAhAAEMixyAAARkCGBYMlIRKAQggGGRAxCAgAwBDEtGKgKFAAQwLHIAAhCQIYBhyUhFoBCAAIZFDkAAAjIEMCwZqQgUAhDAsMgBCEBAhgCGJSMVgUIAAhgWOQABCMgQwLBkpCJQCEAAwyIHIAABGQIYloxUBAoBCGBY5AAEICBDAMOSkYpAIQABDIscgAAEZAhgWDJSESgEIIBhkQMQgIAMAQxLRioChQAEMCyXAzvVe9Xbu9eqN+fPVu/NX692q+29FlvV/dXRyZnq+PR89cDkiUGZ87/5W9XN+ZXqnfnL9b7fXO7j6OTh6r7JqerU5HL1gckDvfdtMb+x+4/q1vx69e78leX2RyYPVkeqU9WJ6cXqg5OzvferskGz/03NLP512f53/lLN9pma6406E97ZQzKts+HI5GR1bHKuZvuxalZT7vsbKxf6xqHWHsNqKPbW/Lnqxs4flybVJqYZwSPTL9Ynw+livV/Z/XN1c/dKtv2p6eXq4elns+0WDUpjNsP60OxLg06u4mDuQcPXdp+uuT6d1cxCOzG9VJ2efqaIgZngf3b+UJlhdf3MvM7MvtDrIjZWLtwD/Ad+SAzrfeRWodzY/VOxAH0S9aU68d+uzbD0d7yu4M7W5pL79Y3ZjPbc7BtFJ2zu2Ifh/325WswlDMysru/8ZqUKzvX3zPRze9VW7tc35tJcyB13U/6PYdVKvjt/tXph59crmlqiWLWzqKKsjVVITeMx0zo/+1bnMM4qILtSL362jVVQx6cX9ozDhgZvzK/uDekWw09ra9VQ19DTtnt+51cr21i8JyaX9uJZDG1f2/3rciizqDLOTD8vn79WWb26+5eVflgF9eDk4lKzNrZWbT42+1orgxu7T9V6XF3+30zuoemnlnoctlyQF7NHBzCsGtYL9dW0OffTdbX0VU3XFdBM49r2z5am0mVwdhK8uPPblbYXtr7XWg35mNsMLlUt2MmqPKeV4vrY7OutQ3Qzrn/v/n6lYmpjYEPAF3d+tzyFbA7s0dlXkzr4XLC2j9cVbOo3Zi70ON/lm4Y3LF9dlZTg3iwubT2ZTARfBeSMwp8sbcbpY87Ne/mTpaSPhzmzPdeS4Zhn1lZlmVkt5q3sAtN10TBGfj7qwuy7yYp7rFw4zDqNEVt4wypNuCb80uR7bucXy6u63WX88Nb3sxo2t7GhyBOz79y1jR+ytJ0kzQ39Nh/Z+oHsXFbzglHK1VjkLjRm7M9u/2SJrcTY/TY2LE0NucfKhWxCbViD8IZlZf3t6mZ1e36z2p7fKjIVXwmlKicbhlzb+fkyXXJV0KKhN8OUGf1r+6fLeamuYUgzV32FUVKVHNZcv7r9o16msmjsL06+MvZDvFxFvNhvsypLGeiYuXBYNRorrvCGNQSsT/zHZ9+8a/7ET7aXJr83Qz835a/opUZo/Wye6G2VQAmPZrVg7Uv25c2grXosOb5VSvazZ67szlzpYyA5w/JVaNtQ38fo9+ur17FyoYTVprXBsAYo2qxwbJ7jo1s/vGsvuSRuO2zOkHKG1tWdptGUVmap/aXuUHYZsm9fcnd1gCzZTXJDwub/+xhqzpDGyoVshzewAYbVQ1Qzkxs7T6082tBW4TSHCXaI0qu1r4T85HDp/FmqW80Tss1oS3H4OLrmknxFlntkozSGPu38sCxl2P/c/vHyLm0fQ/cXkdPTT9ePQXxiGd5YudCn/5vSFsMqUNLmf+68ovH3lWeaupJ66MSwhdM1RzXkJsGii/6hxT4mmsLkT8SUeft4SyayCyTp3cT3PTWHN3RuLDdHNVYu9IawARtgWB0i+iFEs2lu3qa5bZ+rtR2ja9vcPExXTq6zbWq//nEJa9Ocz/MT/VaFnd/69oHfnfRDtrZqsGlYfeYGfVXstx0rFzbAf3p3AcPqQNZM4GYzm984Ofn48mn13PBrUw3L+u3NYDH3Y2b2/PYvVyrS1M2J3hnbcwP/QK5t3jbfhmH1hHsPmmNYAwxrsYldqc/Ovpx8wnqsq+o6VdI623blph9u2RzOdnVr5fUWP69zELmeMquuygnDOghV1jsGhtXCzyqE2/Xc1eIVlsW7ea/P/7byiodNXqdeC4lkWL6aMibN9yL7VpjrpfSdrVNmlZs/w7D2g/y4+8CwBvD1FUVqTiSSYRlCf6dsgbXk9ZYBEnRuMsSsbIcY1n4rsf/7w7AGMs3dqh/rztBhukvo0aXWeSp9YHagDHdtllpyJ1dZLXbCXcL9UmG8/WBYA9n6yWY/N7LOIwRdJ87Q10esm+uYaAmm1JIvBzl3lTLM3N3cZr+GvPKUqi79IxNj5UKJJpvWBsMaqKh/It3P04z1dPNheNI9hSz19Lu1a5vjG4g9uVnqgV5r2Pd9SZ50309VxtkXhrUG12Yl5A0r97pG22FzhpR7daerO/v1LmHqGH6I3GzT5zWXvnKk1vvqsxps83i8S9iX/sG3D29YlqSLlRqOTc8llwZJyeIfivRDD//0c+nQqGSOqjl0ya2euYi9dK2tISnoY7bhsf2aa9j3fRCzJI42s+pazK9rv364XfrcWG6oPWYulHDapDbhDat58vdZW8mfpKnhR8naVj6ZSrYZsrbVkG1KEt0bd7Oa8lVXqQGUHDdlVnbsR6dfGfTlITtm6dpWzfhKtynRdUgulLDapDbhDSv10GPzxdWU2KnlblMrU/Z9UdkPI9uqsr4rjvr5pdKqLJfouafZx3w1x+tW8nGJXH/s/31XHPUXgjZTHisXSvq0SW3CG5Yv13OTxKkre9twp8/a4+uu6d42wTzmmu7+ZE1x8G363LVrO9FSH/bILWVcetL6oXOXEa67pnvb0LVvLpT2bRPahTcsE9GfVPY3/wUWSyL7Yo7/uk1uQtlfWc0QbdG5xddthn41J/eln7G/mpM6sVPLOaeqsHWfzWoO400rM8ohH9W4r/6uZOojqH4VCpsqeGj6yeW7o0O/mjNWLmyCEZX2AcN6n1Tf78XZZqXDkL77Ln3Q8V59lzC3SoNPPm9u6zz93rfPXSdCm3GmqtLcCVX6CMVYuZCLb1P+j2E1lOz7FeE+3/cb62u/9+LLzyXrYPkTxFexQ+fR/LHXORG7Kj0zLb78vA7dcbbFsBxXS1S7it+aX99bM3zxEq9VBUcmJ6tjk3N7H9S0j5X2/dnw7+b8SvXO/OWVF6itUrt/8kh1anJ50H6bMTe/r2hDmaOTM/UQ9OKgIVOqf6VrS/ltU0PDISuPdq1R1lePkqHpnYUbn6lfpr5x1+KNlgs2vE8NK3OxjJULueOq/x/DUleQ+CEQiACGFUhsugoBdQIYlrqCxA+BQAQwrEBi01UIqBPAsNQVJH4IBCKAYQUSm65CQJ0AhqWuIPFDIBABDCuQ2HQVAuoEMCx1BYkfAoEIYFiBxKarEFAngGGpK0j8EAhEAMMKJDZdhYA6AQxLXUHih0AgAhhWILHpKgTUCWBY6goSPwQCEcCwAolNVyGgTgDDUleQ+CEQiACGFUhsugoBdQIYlrqCxA+BQAQwrEBi01UIqBPAsNQVJH4IBCKAYQUSm65CQJ0AhqWuIPFDIBABDCuQ2HQVAuoEMCx1BYkfAoEIYFiBxKarEFAngGGpK0j8EAhEAMMKJDZdhYA6AQxLXUHih0AgAhhWILHpKgTUCWBY6goSPwQCEcCwAolNVyGgTgDDUleQ+CEQiACGFUhsugoBdQIYlrqCxA+BQAQwrEBi01UIqBPAsNQVJH4IBCKAYQUSm65CQJ0AhqWuIPFDIBABDCuQ2HQVAuoEMCx1BYkfAoEIYFiBxKarEFAngGGpK0j8EAhEAMMKJDZdhYA6AQxLXUHih0AgAhhWILHpKgTUCWBY6goSPwQCEcCwAolNVyGgTgDDUleQ+CEQiACGFUhsugoBdQIYlrqCxA+BQAQwrEBi01UIqBPAsNQVJH4IBCKAYQUSm65CQJ0AhqWuIPFDIBABDCuQ2HQVAuoEMCx1BYkfAoEIYFiBxKarEFAngGGpK0j8EAhEAMMKJDZdhYA6AQxLXUHih0AgAhhWILHpKgTUCWBY6goSPwQCEcCwAolNVyGgTgDDUleQ+CEQiACGFUhsugoBdQIYlrqCxA+BQAQwrEBi01UIqBPAsNQVJH4IBCKAYQUSm65CQJ0AhqWuIPFDIBCB/wOxnx5whlKdhwAAAABJRU5ErkJggg==" alt="App Project Image" class="w-full h-auto rounded shadow-lg" />
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Project Overview</h3>
+                <p class="mb-4">
+                    This project is a comprehensive web application designed to provide users with an interactive and engaging experience. It features a responsive layout, dynamic content updates, and modern UI components to enhance usability and accessibility.
+                </p>
+                <h3 class="text-xl font-semibold mb-2">Features</h3>
+                <ul class="list-disc list-inside mb-4">
+                    <li>User authentication</li>
+                    <li>Real-time data updates</li>
+                    <li>Push notifications</li>
+                    <li>Offline support</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-2">Technologies Used</h3>
+                <ul class="list-disc list-inside">
+                    <li>React Native</li>
+                    <li>Flutter</li>
+                    <li>Swift</li>
+                    <li>Kotlin</li>
+                    <li>Java</li>
+                    <li>Dart</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="footer footer-center bg-base-200 text-base-content rounded p-10"
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About me</a>
+        <a class="link link-hover">Contact me</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a href="https://x.com/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/tanjir.ahamad.96">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <p>
+          Copyright © - <span id="footerDate">Date</span> All right reserved by
+        </p>
+      </aside>
+    </footer>
+
+    <script src="custom.js"></script>
+    <!-- Modal -->
+    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+    <div class="modal" role="dialog">
+      <div class="modal-box flex flex-col items-center justify-center">
+        <h3 class="text-lg font-bold text-center">Select Profile To View:</h3>
+        <ul class="menu menu-md bg-base-200 rounded-box w-56 text-center mt-4">
+          <li><a href="tanjir-profile.html">Tanjir Ahmad</a></li>
+          <li><a href="tahasin-profile.html">Tahasin Chowdhury</a></li>
+        </ul>
+      </div>
+      <label class="modal-backdrop" for="my_modal_7">Close</label>
+    </div>
+  </body>
+</html>
